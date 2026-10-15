@@ -1,4 +1,4 @@
-# CBN Optimization 1.1
+# CBN Optimization 1.0
 
 O projeto usa as tecnologias observadas na distribuição: Electron,
 JavaScript/React, CSS/Tailwind e PowerShell. A interface compilada foi recuperada,
