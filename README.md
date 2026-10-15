@@ -1,7 +1,4 @@
-# CBN Boost 1.1
-
-Aplicativo Windows reconstruído a partir de `TogsBoost-Setup.exe`, com nome e
-marca CBN Boost e abertura direta, sem login ou chave de ativação.
+# CBN Optimization 1.1
 
 O projeto usa as tecnologias observadas na distribuição: Electron,
 JavaScript/React, CSS/Tailwind e PowerShell. A interface compilada foi recuperada,
