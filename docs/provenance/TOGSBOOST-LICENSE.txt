@@ -1,0 +1,226 @@
+TOGSBOOST PROPRIETARY LICENSE
+
+Copyright (c) 2025 EduContin. All Rights Reserved.
+
+IMPORTANT - READ CAREFULLY: This License Agreement ("Agreement") is a legal
+agreement between you (either an individual or a single entity) and EduContin
+("Licensor") for the TogsBoost software product, which includes computer
+software and may include associated media, printed materials, and "online"
+or electronic documentation ("Software").
+
+BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE
+BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF
+THIS AGREEMENT, DO NOT INSTALL OR USE THE SOFTWARE.
+
+================================================================================
+1. GRANT OF LICENSE - PERSONAL USE ONLY
+================================================================================
+
+Subject to the terms and conditions of this Agreement, Licensor grants you a
+limited, non-exclusive, non-transferable, revocable license to:
+
+(a) Download and use the Software solely for your personal, non-commercial use
+(b) Run the Software on devices you personally own or control
+
+This license does NOT grant you any right to:
+- Modify, adapt, translate, or create derivative works based on the Software
+- Reverse engineer, decompile, disassemble, or otherwise attempt to discover
+  the source code of the Software
+- Remove, alter, or obscure any proprietary notices on the Software
+- Use the Software for any commercial purpose whatsoever
+
+================================================================================
+2. RESTRICTIONS
+================================================================================
+
+You may NOT:
+
+(a) COPY OR DISTRIBUTE: Copy, distribute, publish, transfer, sublicense,
+    lease, lend, or rent the Software to any third party
+
+(b) MODIFY: Modify, adapt, alter, translate, or create derivative works of
+    the Software in any way
+
+(c) REVERSE ENGINEER: Reverse engineer, decompile, disassemble, or otherwise
+    attempt to derive the source code of the Software
+
+(d) COMMERCIAL USE: Use the Software or any portion thereof for any
+    commercial purpose, including but not limited to:
+    - Selling, licensing, or distributing the Software
+    - Using the Software in a commercial product or service
+    - Using the Software to provide services to third parties
+    - Incorporating any part of the Software into another product
+
+(e) EXTRACT COMPONENTS: Extract, isolate, or use any individual component,
+    feature, or portion of the Software separately from the whole
+
+(f) REBRAND: Remove, modify, or obscure any copyright notices, trademarks,
+    logos, or other proprietary notices contained in the Software
+
+(g) COMPETITIVE USE: Use the Software to develop, test, or distribute any
+    competing software product or service
+
+(h) PUBLIC REPOSITORY: Fork, clone, or create copies of the Software's
+    repository for any purpose other than submitting approved contributions
+
+(i) BENCHMARKING: Use the Software for competitive analysis or benchmarking
+    purposes without prior written consent
+
+================================================================================
+3. INTELLECTUAL PROPERTY RIGHTS
+================================================================================
+
+The Software is licensed, not sold. This Agreement does not grant you any
+rights to patents, copyrights, trade secrets, trademarks, or any other
+intellectual property rights in the Software.
+
+All title and intellectual property rights in and to the Software (including
+but not limited to any images, photographs, animations, video, audio, music,
+text, and "applets" incorporated into the Software), the accompanying printed
+materials, and any copies of the Software are owned by EduContin.
+
+The Software is protected by copyright laws and international copyright
+treaties, as well as other intellectual property laws and treaties.
+
+================================================================================
+4. NO DERIVATIVE WORKS OR REDISTRIBUTION
+================================================================================
+
+You may NOT:
+
+- Create any derivative works based on the Software or any portion thereof
+- Distribute modified versions of the Software
+- Redistribute the Software as part of any package, bundle, or collection
+- Upload the Software or any portion thereof to any public repository
+- Make the Software available for download on any website or platform
+- Share the Software's source code, binaries, or any components with any
+  third party through any means
+- Use any part of the Software's code, design, or architecture in any other
+  project, whether commercial or non-commercial
+
+================================================================================
+5. OPEN SOURCE COMPONENTS
+================================================================================
+
+While the Software itself is proprietary, it may incorporate certain
+third-party open source components. Such components are licensed under their
+respective open source licenses and remain subject to those licenses. However,
+any original code, designs, configurations, or integrations created by
+EduContin remain proprietary and are subject to this Agreement.
+
+A list of open source components and their licenses can be found in the
+Software's documentation or dependencies file.
+
+================================================================================
+6. CONTRIBUTIONS
+================================================================================
+
+If you submit any contributions, suggestions, or feedback to the Software
+(including but not limited to bug reports, feature requests, or code
+submissions), you hereby grant EduContin a perpetual, irrevocable, worldwide,
+royalty-free license to use, reproduce, modify, distribute, and incorporate
+such contributions into the Software without any obligation to compensate you
+or attribute the contributions to you.
+
+================================================================================
+7. TERMINATION
+================================================================================
+
+This Agreement is effective until terminated. Your rights under this Agreement
+will terminate automatically without notice if you fail to comply with any
+term(s) of this Agreement.
+
+Upon termination, you must:
+- Cease all use of the Software
+- Destroy all copies of the Software in your possession or control
+- Remove the Software from all devices on which it is installed
+
+================================================================================
+8. DISCLAIMER OF WARRANTIES
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+LICENSOR DOES NOT WARRANT THAT:
+- The Software will meet your requirements
+- The operation of the Software will be uninterrupted or error-free
+- Defects in the Software will be corrected
+- The Software is free from viruses or other harmful components
+
+================================================================================
+9. LIMITATION OF LIABILITY
+================================================================================
+
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT,
+OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES
+FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS
+INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR
+INABILITY TO USE THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+LICENSOR'S TOTAL LIABILITY TO YOU FOR ACTUAL DAMAGES FOR ANY CAUSE WHATSOEVER
+WILL BE LIMITED TO THE AMOUNT PAID BY YOU FOR THE SOFTWARE (IF ANY).
+
+================================================================================
+10. ENFORCEMENT AND LEGAL ACTION
+================================================================================
+
+Any violation of this Agreement will result in:
+
+(a) IMMEDIATE TERMINATION of your license to use the Software
+(b) LEGAL ACTION including but not limited to:
+    - Injunctive relief to prevent further violations
+    - Monetary damages including actual damages and statutory damages
+    - Recovery of all legal fees and costs associated with enforcement
+    - Criminal prosecution where applicable under copyright law
+
+(c) REPORTING to relevant authorities and platforms (including but not limited
+    to GitHub, software distribution platforms, and law enforcement agencies)
+
+You acknowledge that any unauthorized use, reproduction, or distribution of
+the Software may cause irreparable harm to Licensor for which monetary damages
+may be inadequate, and you agree that Licensor shall be entitled to seek
+equitable relief, including injunction and specific performance, in addition
+to all other remedies available at law or in equity.
+
+================================================================================
+11. GOVERNING LAW
+================================================================================
+
+This Agreement shall be governed by and construed in accordance with the laws
+of the jurisdiction in which Licensor resides, without regard to its conflict
+of law provisions.
+
+Any legal action or proceeding arising under this Agreement will be brought
+exclusively in the courts located in Licensor's jurisdiction, and you hereby
+consent to personal jurisdiction and venue therein.
+
+================================================================================
+12. ENTIRE AGREEMENT
+================================================================================
+
+This Agreement constitutes the entire agreement between you and Licensor
+concerning the Software and supersedes all prior or contemporaneous oral or
+written communications, proposals, and representations with respect to the
+Software or any other subject matter covered by this Agreement.
+
+If any provision of this Agreement is held to be unenforceable, such provision
+shall be reformed only to the extent necessary to make it enforceable, and the
+remaining provisions of this Agreement shall remain in full force and effect.
+
+================================================================================
+13. ACKNOWLEDGMENT
+================================================================================
+
+YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE
+TO BE BOUND BY ITS TERMS AND CONDITIONS. YOU FURTHER AGREE THAT THIS
+AGREEMENT IS THE COMPLETE AND EXCLUSIVE STATEMENT OF AGREEMENT BETWEEN YOU
+AND LICENSOR CONCERNING THE SOFTWARE.
+
+================================================================================
+
+For questions regarding this license, please contact: github.com/EduContin
+
+Last Updated: October 30, 2025

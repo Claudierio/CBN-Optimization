@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "authority": "controlled-replay",
+  "evidence_id": "ev_df76ffc12bf5fec3fd759959f7a6be801d5d52807c4857b123503e3d356151b6",
+  "artifact": "cbn-boost/renderer/index.html",
+  "environment": "Linux headless Chromium; Electron IPC bridge mocked; no Windows commands executed",
+  "catalog": {
+    "total": 29,
+    "available": 28,
+    "reversible": 22,
+    "actions": 6,
+    "obsolete": 1
+  },
+  "pages": [
+    "dashboard",
+    "tweaks",
+    "apps",
+    "restore-points",
+    "cleanup",
+    "settings"
+  ],
+  "checks": [
+    "Dashboard loads without key or authentication",
+    "VRAM 12.00 GB and disk 1.00 TB from numeric bytes",
+    "29 catalog entries: 28 available, 22 reversible, 6 actions, 1 obsolete",
+    "Apply then restore reload authoritative saved state",
+    "Failed tweak rejects and rolls back optimistic toggle",
+    "Unavailable and obsolete tweaks have a reason and no action control",
+    "Actions show returned summary, remain inactive, create no backup, and are repeatable",
+    "Action buttons distinguish Abrir from Executar",
+    "NVIDIA description, limited settings and consumption/quality warning use local metadata",
+    "NVIDIA and HAGS have reversible toggles and preserve restore state",
+    "Missing NVIDIA driver failure leaves no active flag or snapshot",
+    "Researched NVIDIA tweak bypasses the recovered original modal",
+    "Apps use local initials; no remote images",
+    "Restore ISO dates render; failed restore requests reach the backend error path",
+    "Cleanup sends exact fetched script/name and displays verified numeric bytes",
+    "Settings cache operation completes",
+    "No auth/updater/Discord IPC calls or external renderer requests",
+    "No uncaught page errors",
+    "First run with empty storage shows correct CBN Boost welcome and no vendor site link",
+    "Dismiss first-run optional restore prompt performs no Windows operation",
+    "First-run explicit restore action reaches the backend without a key and produces no uncaught renderer error"
+  ],
+  "screenshots": [
+    "docs/cbn-boost-dashboard.png",
+    "docs/cbn-boost-tweaks.png"
+  ],
+  "limitations": [
+    "Original compiled React bundle was recovered; original JSX/TypeScript and source maps were not present",
+    "Windows runtime, native NVAPI and system operations require Windows validation"
+  ],
+  "ipcCalls": 34,
+  "externalRequests": 0,
+  "pageErrors": 0,
+  "firstRunScenarios": 2,
+  "rendererSha256": "add74771ca30d337b72fe0a5662c1cac954b0ab8744890fd099cb916c76bf06b",
+  "sourceHashes": {
+    "scripts/test-renderer.cjs": "9abac9f74ba570af0db83dc42774fad11de72d971904c586d6100a3dc3f36c9b",
+    "cbn-boost/renderer/index.html": "ca9b073c9708f591a8646a918f8d519fe184873b42a6d3cfb0e3e13fc15bbb74",
+    "cbn-boost/renderer/assets/app.js": "add74771ca30d337b72fe0a5662c1cac954b0ab8744890fd099cb916c76bf06b",
+    "cbn-boost/renderer/assets/app.css": "cb164b0d730427659ebb755a353c4d9fc569e2dc2b8e6230f6d52f3de409d450"
+  }
+}

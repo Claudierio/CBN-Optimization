@@ -1,0 +1,8 @@
+{
+  "source": "TogsBoost-Setup.exe",
+  "sha256": "89f523b1f19cd2fd304ac14801b88867a82ebc3b13878e1354a326ededa3c274",
+  "embedded_offset": 542660,
+  "regular_files": 154,
+  "runtime_executable_sha256": "c0b095f9921a7ccd91c0cb2548f3cd0a391549060bac89f6c7632234c4bb2130",
+  "full_manifest_local": ".recovery/extraction-manifest.json"
+}

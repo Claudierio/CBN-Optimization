@@ -1,0 +1,9 @@
+.recovery/
+dist/
+node_modules/
+__pycache__/
+*.pyc
+TogsBoost-Setup.exe
+TogsBoost-Setup.exe:Zone.Identifier
+*.log
+*.tmp

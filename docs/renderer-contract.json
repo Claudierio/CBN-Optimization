@@ -1,0 +1,171 @@
+{
+  "source": ".recovery/full-app/out/renderer/assets/index-qyW3NT1i.js",
+  "newRenderer": "cbn-boost/renderer/assets/app.js",
+  "technology": "Recovered compiled React bundle; original JSX, TypeScript and source maps not present",
+  "invoke": {
+    "get-user-name": {
+      "request": null,
+      "response": "string"
+    },
+    "get-system-info": {
+      "request": null,
+      "response": {
+        "cpu_model": "string",
+        "cpu_cores": "number",
+        "gpu_model": "string",
+        "vram": "number bytes",
+        "memory_total": "number bytes",
+        "memory_type": "string",
+        "disk_model": "string",
+        "disk_size": "number bytes",
+        "os": "string",
+        "os_version": "string",
+        "hasGPU": "boolean",
+        "isNvidia": "boolean",
+        "windowsBuild": "number (Windows build)",
+        "windowsEdition": "string (Windows EditionID)"
+      }
+    },
+    "tweaks:fetch": {
+      "request": null,
+      "response": "Array<{id,name,title,description,category:string[],mode:reversible|action,reversible:boolean,localImplementation:boolean,available:boolean,reason?,warning?,localDetails?,canRestore:boolean,appliedByApp:boolean,recoveryRequired:boolean,obsolete:boolean}>"
+    },
+    "tweak:active": {
+      "response": "string[]"
+    },
+    "tweak-states:load": {
+      "response": "JSON object string: toggle indicates canRestore/saved prior configuration, not verification that the OS already has every requested value"
+    },
+    "tweak-states:save": {
+      "request": "JSON object string"
+    },
+    "tweak:apply": {
+      "request": "name:string",
+      "response": "Resolve {success:true,verified:true,summary?,opened?,applied?}; rejects or success:false on failure"
+    },
+    "tweak:unapply": {
+      "request": "name:string",
+      "response": "resolve on success; reject or {success:false,error} on failure"
+    },
+    "cleanup:fetch-script": {
+      "request": "temp|prefetch|recyclebin|windows-update|thumbnails",
+      "response": "{success:boolean,script?:string,error?:string}"
+    },
+    "run-powershell": {
+      "request": {
+        "script": "exact script returned by cleanup:fetch-script",
+        "name": "cleanup-${id}"
+      },
+      "response": "{output:string numeric bytes}; reject or success:false on failure"
+    },
+    "handle-apps": {
+      "request": {
+        "action": "check-installed|install|uninstall",
+        "apps": "Array<string|string[]>"
+      },
+      "response": "acknowledgment; progress through events"
+    },
+    "get-restore-points": {
+      "response": "{success:boolean,points:[{CreationTime:string WMI|ISO|/Date(ms)/,Description:string,SequenceNumber:number}],error?:string}"
+    },
+    "create-restore-point": {
+      "request": "description:string"
+    },
+    "restore-restore-point": {
+      "request": "SequenceNumber:number"
+    },
+    "delete-all-restore-points": {},
+    "restart": {},
+    "open-log-folder": {},
+    "create-cbnboost-restore-point": {},
+    "clear-cbnboost-cache": {}
+  },
+  "send": [
+    "window-close",
+    "window-minimize",
+    "window-maximize"
+  ],
+  "events": {
+    "installed-apps-checked": "{success:boolean,installed:string[],error?:string}",
+    "install-progress": "display string",
+    "install-complete": "no payload (only if every operation succeeded)",
+    "install-error": "error string",
+    "removeListener": "Remove exact callback pair only"
+  },
+  "removedIntegrations": [
+    "auth:check-status",
+    "auth:validate-token",
+    "auth:logout",
+    "auth-required",
+    "updater:check",
+    "updater:download",
+    "updater:install",
+    "updater:*",
+    "discord-rpc:get",
+    "discord-rpc:toggle",
+    "Sentry initialization/replay",
+    "license recovery https://togsboost.com.br/api/recover-license",
+    "Original vendor website and social links"
+  ],
+  "originalCallExpressions": [
+    "Ue({channel:\"restart\"})",
+    "Ue({channel:\"get-user-name\"})",
+    "Ue({channel:\"tweak:active\"})",
+    "Ue({channel:\"get-system-info\"})",
+    "Ue({channel:\"tweaks:fetch\"})",
+    "Ue({channel:\"tweaks:fetch\"})",
+    "Ue({channel:\"tweak-states:load\"})",
+    "Ue({channel:\"tweak-states:save\",payload:JSON.stringify(j)})",
+    "Ue({channel:\"tweak:apply\",payload:j.name})",
+    "Ue({channel:\"tweak:unapply\",payload:j.name})",
+    "Ue({channel:\"tweak:apply\",payload:j.name})",
+    "Ue({channel:\"tweak:apply\",payload:M.name})",
+    "Ue({channel:\"cleanup:fetch-script\",payload:V.id})",
+    "Ue({channel:\"run-powershell\",payload:{script:q.script,name:`cleanup-${V.id}`}})",
+    "Ue({channel:\"handle-apps\",payload:{action:\"check-installed\",apps:I.map(Y=>Y.id)}})",
+    "Ue({channel:\"handle-apps\",payload:{action:Y,apps:$}})",
+    "Ue({channel:\"updater:check\"})",
+    "Ue({channel:\"discord-rpc:get\"})",
+    "Ue({channel:\"discord-rpc:toggle\",payload:_})",
+    "Ue({channel:\"clear-togsboost-cache\"})",
+    "Ue({channel:\"delete-old-togsboost-backups\"})",
+    "Ue({channel:\"get-user-name\"})",
+    "Ue({channel:\"open-log-folder\"})",
+    "Ue({channel:\"get-restore-points\"})",
+    "Ue({channel:\"create-togsboost-restore-point\"})",
+    "Ue({channel:\"restore-restore-point\",payload:x.restorePoint.SequenceNumber})",
+    "Ue({channel:\"create-restore-point\",payload:_})",
+    "Ue({channel:\"delete-all-restore-points\"})",
+    "Ue({channel:\"auth:check-status\"})",
+    "Ue({channel:\"auth:validate-token\",payload:n.trim()})",
+    "Ue({channel:\"auth:logout\"})",
+    "Ue({channel:\"create-togsboost-restore-point\"})"
+  ],
+  "networkPolicy": "Renderer CSP connect-src none and local/data images. External application vendor links remain user-driven; original vendor links removed.",
+  "errorHandling": "All invoke responses with success:false or ok:false throw; unavailable tweaks disabled and explain reason; main process must never resolve unsupported actions as success.",
+  "shell": {
+    "openExternal": "User-driven catalog vendor HTTPS URL; invokes open-external channel"
+  },
+  "uiNotes": [
+    "No bulk apply action in recovered interface; every optimization is selected separately.",
+    "Unavailable operations have no action control and show their reason.",
+    "Tweak operations disable controls while pending, reload authoritative state, rollback on rejection and show backend error.",
+    "Renderer does not assert success from saved toggles; canRestore allows restoring the previous configuration."
+  ],
+  "verification": {
+    "evidence_id": "ev_df76ffc12bf5fec3fd759959f7a6be801d5d52807c4857b123503e3d356151b6",
+    "result": "passed",
+    "pages": 6,
+    "firstRunScenarios": 2,
+    "catalog": {
+      "total": 29,
+      "available": 28,
+      "reversible": 22,
+      "actions": 6,
+      "obsolete": 1
+    },
+    "externalRequests": 0,
+    "pageErrors": 0,
+    "method": "Linux headless Chromium with mock IPC; no Windows commands executed"
+  }
+}

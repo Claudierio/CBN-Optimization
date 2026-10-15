@@ -1,0 +1,20 @@
+{
+  "name": "cbn-boost-project",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Projeto recuperado e reconstruído do CBN Boost para Windows",
+  "scripts": {
+    "start": "electron cbn-boost",
+    "test": "node scripts/test-backend.cjs",
+    "test:packaging": "python3 -m unittest discover -s tests -p '*_test.py'",
+    "test:renderer": "node scripts/test-renderer.cjs",
+    "build": "python3 scripts/build-portable.py",
+    "source:zip": "python3 scripts/package-source.py"
+  },
+  "devDependencies": {
+    "@electron/asar": "4.2.0",
+    "electron": "38.0.0",
+    "playwright-core": "1.58.2"
+  },
+  "license": "SEE LICENSE IN cbn-boost/THIRD_PARTY_NOTICES.md"
+}

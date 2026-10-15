@@ -1,0 +1,1234 @@
+[
+  {
+    "name": "Firefox",
+    "id": "Mozilla.Firefox",
+    "category": "browsers",
+    "info": {
+      "en": "A fast, private and secure web browser.",
+      "es": "Un navegador web rápido, privado y seguro.",
+      "pt": "Um navegador web rápido, privado e seguro."
+    },
+    "link": "https://www.mozilla.org/en-US/firefox/new/"
+  },
+  {
+    "name": "Google Chrome",
+    "id": "Google.Chrome",
+    "category": "browsers",
+    "info": {
+      "en": "The most popular web browser.",
+      "es": "El navegador web más popular.",
+      "pt": "O navegador web mais popular."
+    },
+    "link": "https://www.google.com/chrome/"
+  },
+  {
+    "name": "Discord",
+    "id": "Discord.Discord",
+    "category": "communication",
+    "info": {
+      "en": "Discord is a communication app that lets you chat with your friends.",
+      "es": "Discord es una app de comunicación que te permite chatear con tus amigos.",
+      "pt": "Discord é um aplicativo de comunicação que permite conversar com seus amigos."
+    },
+    "link": "https://discord.com/"
+  },
+  {
+    "name": "Spotify (may not work)",
+    "id": "Spotify.Spotify",
+    "warning": "This app may not install properly as CBN Boost runs as admin. However uninstalling will continue to work as normal.",
+    "category": "multimedia",
+    "info": {
+      "en": "Listen to music and podcasts.",
+      "es": "Escucha música y podcasts.",
+      "pt": "Ouça música e podcasts."
+    },
+    "link": "https://www.spotify.com/"
+  },
+  {
+    "name": "Steam",
+    "id": "Valve.Steam",
+    "category": "games",
+    "info": {
+      "en": "A digital distribution platform for video games.",
+      "es": "Una plataforma de distribución digital para videojuegos.",
+      "pt": "Uma plataforma de distribuição digital para videogames."
+    },
+    "link": "https://store.steampowered.com/"
+  },
+  {
+    "name": "Epic Games Launcher",
+    "id": "EpicGames.EpicGamesLauncher",
+    "category": "games",
+    "info": {
+      "en": "A Games Store",
+      "es": "Una tienda de juegos",
+      "pt": "Uma loja de jogos"
+    },
+    "link": "https://www.epicgames.com/"
+  },
+  {
+    "name": "EA App",
+    "id": "ElectronicArts.EADesktop",
+    "category": "games",
+    "info": {
+      "en": "A Games Store",
+      "es": "Una tienda de juegos",
+      "pt": "Uma loja de jogos"
+    },
+    "link": "https://www.ea.com/"
+  },
+  {
+    "name": "BattleNet",
+    "id": "Blizzard.BattleNet",
+    "category": "games",
+    "info": {
+      "en": "A Games Store",
+      "es": "Una tienda de juegos",
+      "pt": "Uma loja de jogos"
+    },
+    "link": "https://us.shop.battle.net/"
+  },
+  {
+    "name": "Visual Studio Code",
+    "id": "Microsoft.VisualStudioCode",
+    "category": "development",
+    "info": {
+      "en": "A code editor that runs on your computer.",
+      "es": "Un editor de código que se ejecuta en tu computadora.",
+      "pt": "Um editor de código que roda no seu computador."
+    },
+    "link": "https://code.visualstudio.com/"
+  },
+  {
+    "name": "Visual Studio Code Insiders",
+    "id": "Microsoft.VisualStudioCode.Insiders",
+    "category": "development",
+    "info": {
+      "en": "A code editor that runs on your computer.",
+      "es": "Un editor de código que se ejecuta en tu computadora.",
+      "pt": "Um editor de código que roda no seu computador."
+    },
+    "link": "https://code.visualstudio.com/insiders/"
+  },
+  {
+    "name": "Visual Studio",
+    "id": "Microsoft.VisualStudio.2022",
+    "category": "development",
+    "info": {
+      "en": "A code editor that runs on your computer.",
+      "es": "Un editor de código que se ejecuta en tu computadora.",
+      "pt": "Um editor de código que roda no seu computador."
+    },
+    "link": "https://visualstudio.microsoft.com/"
+  },
+  {
+    "name": "Notepad++",
+    "id": "Notepad++.Notepad++",
+    "category": "development",
+    "info": {
+      "en": "A code editor that runs on your computer.",
+      "es": "Un editor de código que se ejecuta en tu computadora.",
+      "pt": "Um editor de código que roda no seu computador."
+    },
+    "link": "https://notepad-plus-plus.org/"
+  },
+  {
+    "name": "Sublime Text",
+    "id": "Sublime.Text",
+    "category": "development",
+    "info": {
+      "en": "A code editor that runs on your computer.",
+      "es": "Un editor de código que se ejecuta en tu computadora.",
+      "pt": "Um editor de código que roda no seu computador."
+    },
+    "link": "https://www.sublimetext.com/"
+  },
+  {
+    "name": "Brave",
+    "id": "Brave.Brave",
+    "category": "browsers",
+    "info": {
+      "en": "A fast, private and secure web browser.",
+      "es": "Un navegador web rápido, privado y seguro.",
+      "pt": "Um navegador web rápido, privado e seguro."
+    },
+    "link": "https://brave.com/"
+  },
+  {
+    "name": "Opera",
+    "id": "Opera.Opera",
+    "category": "browsers",
+    "info": {
+      "en": "A fast, private and secure web browser.",
+      "es": "Un navegador web rápido, privado y seguro.",
+      "pt": "Um navegador web rápido, privado e seguro."
+    },
+    "link": "https://www.opera.com/"
+  },
+  {
+    "name": "Opera GX",
+    "id": "Opera.OperaGX",
+    "category": "browsers",
+    "info": {
+      "en": "A fast, private and secure web browser for gamers.",
+      "es": "Un navegador web rápido, privado y seguro para gamers.",
+      "pt": "Um navegador web rápido, privado e seguro para gamers."
+    },
+    "link": "https://www.opera.com/gx"
+  },
+  {
+    "name": "Vivaldi",
+    "id": "Vivaldi.Vivaldi",
+    "category": "browsers",
+    "info": {
+      "en": "A fast, private and secure web browser.",
+      "es": "Un navegador web rápido, privado y seguro.",
+      "pt": "Um navegador web rápido, privado e seguro."
+    },
+    "link": "https://vivaldi.com/"
+  },
+  {
+    "name": "Zoom",
+    "id": "Zoom.Zoom",
+    "category": "communication",
+    "info": {
+      "en": "A video conferencing app.",
+      "es": "Una aplicación de videoconferencia.",
+      "pt": "Um aplicativo de videoconferência."
+    },
+    "link": "https://zoom.us/"
+  },
+  {
+    "name": "Mircosoft Teams",
+    "id": "Microsoft.Teams",
+    "category": "communication",
+    "info": {
+      "en": "A Microsoft video conferencing app.",
+      "es": "Una aplicación de videoconferencia de Microsoft.",
+      "pt": "Um aplicativo de videoconferência da Microsoft."
+    },
+    "link": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
+  },
+  {
+    "name": "Telegram Desktop",
+    "id": "Telegram.TelegramDesktop",
+    "category": "communication",
+    "info": {
+      "en": "A messaging app.",
+      "es": "Una aplicación de mensajería.",
+      "pt": "Um aplicativo de mensagens."
+    },
+    "link": "https://telegram.org/"
+  },
+  {
+    "name": "7-Zip",
+    "id": "7Zip.7Zip",
+    "category": "utilities",
+    "info": {
+      "en": "A file archiver.",
+      "es": "Un archivador de archivos.",
+      "pt": "Um arquivador de arquivos."
+    },
+    "link": "https://www.7-zip.org/"
+  },
+  {
+    "name": "Git",
+    "id": "Git.Git",
+    "category": "development",
+    "info": {
+      "en": "A version control system.",
+      "es": "Un sistema de control de versiones.",
+      "pt": "Um sistema de controle de versão."
+    },
+    "link": "https://git-scm.com/"
+  },
+  {
+    "name": "GitHub Desktop",
+    "id": "GitHub.GitHubDesktop",
+    "category": "development",
+    "info": {
+      "en": "A Git client for desktop.",
+      "es": "Un cliente de Git para escritorio.",
+      "pt": "Um cliente Git para desktop."
+    },
+    "link": "https://desktop.github.com/"
+  },
+  {
+    "name": "Logitech GHUB",
+    "id": "Logitech.GHUB",
+    "category": "peripherals",
+    "info": {
+      "en": "App to Manage your logitech peripherals.",
+      "es": "Aplicación para gestionar tus periféricos logitech.",
+      "pt": "Aplicativo para gerenciar seus periféricos logitech."
+    },
+    "link": "https://www.logitechg.com/en-us/software/ghub"
+  },
+  {
+    "name": "Python 3.9",
+    "id": "Python.Python.3.9",
+    "category": "development",
+    "info": {
+      "en": "Python programming language (v3.9)",
+      "es": "Lenguaje de programación Python (v3.9)",
+      "pt": "Linguagem de programação Python (v3.9)"
+    },
+    "link": "https://www.python.org"
+  },
+  {
+    "name": "Node.js",
+    "id": "OpenJS.NodeJS",
+    "category": "development",
+    "info": {
+      "en": "JavaScript runtime.",
+      "es": "Entorno de ejecución de JavaScript.",
+      "pt": "Runtime de JavaScript."
+    },
+    "link": "https://nodejs.org/"
+  },
+  {
+    "name": "Postman",
+    "id": "Postman.Postman",
+    "category": "development",
+    "info": {
+      "en": "API testing tool.",
+      "es": "Herramienta de prueba de APIs.",
+      "pt": "Ferramenta de teste de APIs."
+    },
+    "link": "https://www.postman.com/"
+  },
+  {
+    "name": "Docker Desktop",
+    "id": "Docker.DockerDesktop",
+    "category": "development",
+    "info": {
+      "en": "Container platform.",
+      "es": "Plataforma de contenedores.",
+      "pt": "Plataforma de contêineres."
+    },
+    "link": "https://www.docker.com/products/docker-desktop"
+  },
+  {
+    "name": "Slack",
+    "id": "SlackTechnologies.Slack",
+    "category": "communication",
+    "info": {
+      "en": "A messaging app for teams.",
+      "es": "Una aplicación de mensajería para equipos.",
+      "pt": "Um aplicativo de mensagens para equipes."
+    },
+    "link": "https://slack.com/"
+  },
+  {
+    "name": "RustDesk",
+    "id": "RustDesk.RustDesk",
+    "category": "utilities",
+    "info": {
+      "en": "Remote desktop software.",
+      "es": "Software de escritorio remoto.",
+      "pt": "Software de acesso remoto."
+    },
+    "link": "https://rustdesk.com/"
+  },
+  {
+    "name": "Everything Search",
+    "id": "voidtools.Everything",
+    "category": "utilities",
+    "info": {
+      "en": "A file search tool.",
+      "es": "Una herramienta de búsqueda de archivos.",
+      "pt": "Uma ferramenta de busca de arquivos."
+    }
+  },
+  {
+    "name": "VLC",
+    "id": "VideoLAN.VLC",
+    "category": "multimedia",
+    "info": {
+      "en": "Media player.",
+      "es": "Reproductor multimedia.",
+      "pt": "Reprodutor de mídia."
+    },
+    "link": "https://vlc.media/"
+  },
+  {
+    "name": "Audacity",
+    "id": "Audacity.Audacity",
+    "category": "multimedia",
+    "info": {
+      "en": "Audio editor.",
+      "es": "Editor de audio.",
+      "pt": "Editor de áudio."
+    },
+    "link": "https://www.audacityteam.org/"
+  },
+  {
+    "name": "OBS Studio",
+    "id": "OBSProject.OBSStudio",
+    "category": "multimedia",
+    "info": {
+      "en": "Screen recording and streaming.",
+      "es": "Grabación de pantalla y transmisión.",
+      "pt": "Gravação de tela e transmissão."
+    },
+    "link": "https://obsproject.com/"
+  },
+  {
+    "name": "MSI Afterburner",
+    "id": "Guru3D.Afterburner",
+    "category": "utilities",
+    "info": {
+      "en": "GPU overclocking tool.",
+      "es": "Herramienta de overclocking de GPU.",
+      "pt": "Ferramenta de overclocking de GPU."
+    },
+    "link": "https://www.msi.com/Landing/afterburner"
+  },
+  {
+    "name": "Fan Control",
+    "id": "Rem0o.FanControl",
+    "category": "utilities",
+    "info": {
+      "en": "Fan speed control software.",
+      "es": "Software de control de velocidad de ventiladores.",
+      "pt": "Software de controle de velocidade de ventiladores."
+    },
+    "link": "https://getfancontrol.com/"
+  },
+  {
+    "name": "WinRAR",
+    "id": "RARLab.WinRAR",
+    "category": "utilities",
+    "info": {
+      "en": "A file archiver.",
+      "es": "Un archivador de archivos.",
+      "pt": "Um arquivador de arquivos."
+    },
+    "link": "https://www.win-rar.com/"
+  },
+  {
+    "name": "Parsec",
+    "id": "Parsec.Parsec",
+    "category": "utilities",
+    "info": {
+      "en": "Low latency game streaming.",
+      "es": "Transmisión de juegos de baja latencia.",
+      "pt": "Streaming de jogos de baixa latência."
+    },
+    "link": "https://parsec.app/"
+  },
+  {
+    "name": "OpenRGB",
+    "id": "OpenRGB.OpenRGB",
+    "category": "utilities",
+    "info": {
+      "en": "RGB lighting control.",
+      "es": "Control de iluminación RGB.",
+      "pt": "Controle de iluminação RGB."
+    },
+    "link": "https://openrgb.org/"
+  },
+  {
+    "name": "Rust",
+    "id": "Rustlang.Rust.MSVC",
+    "category": "development",
+    "info": {
+      "en": "Programming language.",
+      "es": "Lenguaje de programación.",
+      "pt": "Linguagem de programação."
+    },
+    "link": "https://www.rust-lang.org/"
+  },
+  {
+    "name": "Notion",
+    "id": "Notion.Notion",
+    "category": "productivity",
+    "info": {
+      "en": "Note-taking and organization app.",
+      "es": "Aplicación de notas y organización.",
+      "pt": "Aplicativo de anotações e organização."
+    },
+    "link": "https://www.notion.so/"
+  },
+  {
+    "name": "Dropbox",
+    "id": "Dropbox.Dropbox",
+    "category": "productivity",
+    "info": {
+      "en": "Cloud storage service.",
+      "es": "Servicio de almacenamiento en la nube.",
+      "pt": "Serviço de armazenamento na nuvem."
+    },
+    "link": "https://www.dropbox.com/"
+  },
+  {
+    "name": "Microsoft Office",
+    "id": "Microsoft.Office",
+    "category": "productivity",
+    "info": {
+      "en": "Office suite.",
+      "es": "Suite de oficina.",
+      "pt": "Suite de escritório."
+    },
+    "link": "https://www.office.com/"
+  },
+  {
+    "name": "Surfshark VPN",
+    "id": "Surfshark.Surfshark",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://surfshark.com/"
+  },
+  {
+    "name": "Windscribe",
+    "id": "Windscribe.Windscribe",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://windscribe.com/"
+  },
+  {
+    "name": "Proton VPN",
+    "id": "Proton.ProtonVPN",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://protonvpn.com/"
+  },
+  {
+    "name": "Express VPN",
+    "id": "ExpressVPN.ExpressVPN",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://www.expressvpn.com/"
+  },
+  {
+    "name": "Private Internet Access",
+    "id": "PrivateInternetAccess.PrivateInternetAccess",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://www.privateinternetaccess.com/"
+  },
+  {
+    "name": "NordVPN",
+    "id": "NordSecurity.NordVPN",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://nordvpn.com/cybersecurity-site/"
+  },
+  {
+    "name": "IPVanish",
+    "id": "IPVanish.IPVanish",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://www.ipvanish.com/"
+  },
+  {
+    "name": "Mullvad VPN",
+    "id": "MullvadVPN.MullvadVPN",
+    "category": "VPN",
+    "info": {
+      "en": "VPN service.",
+      "es": "Servicio VPN.",
+      "pt": "Serviço VPN."
+    },
+    "link": "https://mullvad.net/"
+  },
+  {
+    "name": "GPU-Z",
+    "id": "TechPowerUp.GPU-Z",
+    "category": "utilities",
+    "info": {
+      "en": "GPU information tool.",
+      "es": "Herramienta de información de GPU.",
+      "pt": "Ferramenta de informação de GPU."
+    },
+    "link": "https://www.techpowerup.com/gpuz/"
+  },
+  {
+    "name": "HWMonitor",
+    "id": "CPUID.HWMonitor",
+    "category": "utilities",
+    "info": {
+      "en": "Hardware monitoring tool.",
+      "es": "Herramienta de monitoreo de hardware.",
+      "pt": "Ferramenta de monitoramento de hardware."
+    },
+    "link": "https://www.cpuid.com/softwares/hwmonitor.html"
+  },
+  {
+    "name": "Neovim",
+    "id": "Neovim.Neovim",
+    "category": "development",
+    "info": {
+      "en": "A text editor.",
+      "es": "Un editor de texto.",
+      "pt": "Um editor de texto."
+    },
+    "link": "https://neovim.io/"
+  },
+  {
+    "name": "PowerToys",
+    "id": "Microsoft.PowerToys",
+    "category": "utilities",
+    "info": {
+      "en": "Windows system utilities.",
+      "es": "Utilidades del sistema Windows.",
+      "pt": "Utilitários do sistema Windows."
+    },
+    "link": "https://learn.microsoft.com/en-us/windows/powertoys/"
+  },
+  {
+    "name": "PuTTY",
+    "id": "PuTTY.PuTTY",
+    "category": "utilities",
+    "info": {
+      "en": "SSH client.",
+      "es": "Cliente SSH.",
+      "pt": "Cliente SSH."
+    },
+    "link": "https://www.putty.org/"
+  },
+  {
+    "name": "Virtual Desktop Streamer",
+    "id": "VirtualDesktop.Streamer",
+    "category": "games",
+    "info": {
+      "en": "VR streaming software.",
+      "es": "Software de transmisión VR.",
+      "pt": "Software de streaming VR."
+    },
+    "link": "https://www.vrdesktop.net/"
+  },
+  {
+    "name": "Cemu",
+    "id": "Cemu.Cemu",
+    "category": "games",
+    "info": {
+      "en": "A Wii U emulator.",
+      "es": "Un emulador de Wii U.",
+      "pt": "Um emulador de Wii U."
+    },
+    "link": "https://cemu.info/"
+  },
+  {
+    "name": "Tor Browser",
+    "id": "TorProject.TorBrowser",
+    "category": "browsers",
+    "info": {
+      "en": "A browser for anonymous browsing.",
+      "es": "Un navegador para navegación anónima.",
+      "pt": "Um navegador para navegação anônima."
+    },
+    "link": "https://www.torproject.org/"
+  },
+  {
+    "name": "Display Driver Uninstaller",
+    "id": "Wagnardsoft.DisplayDriverUninstaller",
+    "category": "utilities",
+    "info": {
+      "en": "GPU driver removal tool.",
+      "es": "Herramienta de eliminación de drivers de GPU.",
+      "pt": "Ferramenta de remoção de drivers de GPU."
+    },
+    "link": "https://www.guru3d.com/download/display-driver-uninstaller-download/"
+  },
+  {
+    "name": "SignalRgb",
+    "id": "WhirlwindFX.SignalRgb",
+    "category": "utilities",
+    "info": {
+      "en": "RGB lighting control.",
+      "es": "Control de iluminación RGB.",
+      "pt": "Controle de iluminação RGB."
+    },
+    "link": "https://signalrgb.com/"
+  },
+  {
+    "name": "Flow Launcher",
+    "id": "Flow-Launcher.Flow-Launcher",
+    "category": "utilities",
+    "info": {
+      "en": "Application launcher.",
+      "es": "Lanzador de aplicaciones.",
+      "pt": "Lançador de aplicativos."
+    },
+    "link": "https://www.flowlauncher.com/"
+  },
+  {
+    "name": "AnyDesk",
+    "id": "AnyDesk.AnyDesk",
+    "category": "utilities",
+    "info": {
+      "en": "Remote desktop software.",
+      "es": "Software de escritorio remoto.",
+      "pt": "Software de acesso remoto."
+    },
+    "link": "https://anydesk.com/en"
+  },
+  {
+    "name": "WizTree",
+    "id": "AntibodySoftware.WizTree",
+    "category": "utilities",
+    "info": {
+      "en": "Disk space analyzer.",
+      "es": "Analizador de espacio en disco.",
+      "pt": "Analisador de espaço em disco."
+    },
+    "link": "https://diskanalyzer.com/"
+  },
+  {
+    "name": "qBittorrent",
+    "id": "qBittorrent.qBittorrent",
+    "category": "utilities",
+    "info": {
+      "en": "Torrent client.",
+      "es": "Cliente de torrent.",
+      "pt": "Cliente de torrent."
+    },
+    "link": "https://www.qbittorrent.org/"
+  },
+  {
+    "name": "Bitwarden",
+    "id": "Bitwarden.Bitwarden",
+    "category": "utilities",
+    "info": {
+      "en": "Password manager.",
+      "es": "Gestor de contraseñas.",
+      "pt": "Gerenciador de senhas."
+    },
+    "link": "https://bitwarden.com/"
+  },
+  {
+    "name": "Wireshark",
+    "id": "WiresharkFoundation.Wireshark",
+    "category": "utilities",
+    "info": {
+      "en": "Network protocol analyzer.",
+      "es": "Analizador de protocolos de red.",
+      "pt": "Analisador de protocolo de rede."
+    },
+    "link": "https://www.wireshark.org/"
+  },
+  {
+    "name": "Sunshine",
+    "id": "LizardByte.Sunshine",
+    "category": "games",
+    "info": {
+      "en": "Game streaming host.",
+      "es": "Host de transmisión de juegos.",
+      "pt": "Host de streaming de jogos."
+    },
+    "link": "https://app.lizardbyte.dev/Sunshine/"
+  },
+  {
+    "name": "Moonlight",
+    "id": "MoonlightGameStreamingProject.Moonlight",
+    "category": "games",
+    "info": {
+      "en": "Game streaming client.",
+      "es": "Cliente de transmisión de juegos.",
+      "pt": "Cliente de streaming de jogos."
+    },
+    "link": "https://moonlight-stream.org/"
+  },
+  {
+    "name": "Playnite",
+    "id": "Playnite.Playnite",
+    "category": "games",
+    "info": {
+      "en": "A game library manager.",
+      "es": "Un gestor de biblioteca de juegos.",
+      "pt": "Um gerenciador de biblioteca de jogos."
+    },
+    "link": "https://playnite.link/"
+  },
+  {
+    "name": "Bloxstrap",
+    "id": "pizzaboxer.Bloxstrap",
+    "category": "games",
+    "info": {
+      "en": "A Roblox launcher.",
+      "es": "Un lanzador de Roblox.",
+      "pt": "Um launcher de Roblox."
+    },
+    "link": "https://bloxstraplabs.com/"
+  },
+  {
+    "name": "Go",
+    "id": "GoLang.Go",
+    "category": "development",
+    "info": {
+      "en": "Programming language.",
+      "es": "Lenguaje de programación.",
+      "pt": "Linguagem de programação."
+    },
+    "link": "https://go.dev/"
+  },
+  {
+    "name": "Bulk Crap Uninstaller",
+    "id": "Klocman.BulkCrapUninstaller",
+    "category": "utilities",
+    "info": {
+      "en": "Bulk program uninstaller.",
+      "es": "Desinstalador masivo de programas.",
+      "pt": "Desinstalador em massa de programas."
+    },
+    "link": "https://www.bcuninstaller.com/"
+  },
+  {
+    "name": "Windhawk",
+    "id": "RamenSoftware.Windhawk",
+    "category": "utilities",
+    "info": {
+      "en": "Windows customization tool.",
+      "es": "Herramienta de personalización de Windows.",
+      "pt": "Ferramenta de personalização do Windows."
+    },
+    "link": "https://windhawk.net/"
+  },
+  {
+    "name": "Bulk Rename Utility",
+    "id": "TGRMNSoftware.BulkRenameUtility",
+    "category": "utilities",
+    "info": {
+      "en": "File renaming tool.",
+      "es": "Herramienta de renombrado de archivos.",
+      "pt": "Ferramenta de renomeação de arquivos."
+    },
+    "link": "https://www.bulkrenameutility.co.uk/"
+  },
+  {
+    "name": "GIMP",
+    "id": "GIMP.GIMP.2",
+    "category": "utilities",
+    "info": {
+      "en": "Image editor.",
+      "es": "Editor de imágenes.",
+      "pt": "Editor de imagens."
+    },
+    "link": "https://www.gimp.org/"
+  },
+  {
+    "name": "Guilded",
+    "id": "Guilded.Guilded",
+    "category": "communication",
+    "info": {
+      "en": "A communication platform for communities.",
+      "es": "Una plataforma de comunicación para comunidades.",
+      "pt": "Uma plataforma de comunicação para comunidades."
+    },
+    "link": "https://www.guilded.gg/"
+  },
+  {
+    "name": "Zen Browser",
+    "id": "Zen-Team.Zen-Browser",
+    "category": "browsers",
+    "info": {
+      "en": "A fast and private web browser.",
+      "es": "Un navegador web rápido y privado.",
+      "pt": "Um navegador web rápido e privado."
+    },
+    "link": "https://zen-browser.app/"
+  },
+  {
+    "name": "Lively Wallpaper",
+    "id": "rocksdanister.LivelyWallpaper",
+    "category": "utilities",
+    "info": {
+      "en": "Animated wallpaper app.",
+      "es": "Aplicación de fondos de pantalla animados.",
+      "pt": "Aplicativo de papel de parede animado."
+    },
+    "link": "https://rocksdanister.github.io/lively/"
+  },
+  {
+    "name": "File-Converter",
+    "id": "AdrienAllard.FileConverter",
+    "category": "utilities",
+    "info": {
+      "en": "File format converter.",
+      "es": "Convertidor de formato de archivos.",
+      "pt": "Conversor de formato de arquivos."
+    },
+    "link": "https://file-converter.io/"
+  },
+  {
+    "name": "JDownloader 2",
+    "id": "AppWork.JDownloader",
+    "category": "utilities",
+    "info": {
+      "en": "Download manager.",
+      "es": "Gestor de descargas.",
+      "pt": "Gerenciador de downloads."
+    },
+    "link": "https://jdownloader.org/jdownloader2"
+  },
+  {
+    "name": "Files",
+    "id": "FilesCommunity.Files",
+    "category": "utilities",
+    "info": {
+      "en": "Modern file manager.",
+      "es": "Gestor de archivos moderno.",
+      "pt": "Gerenciador de arquivos moderno."
+    },
+    "link": "https://files.community/"
+  },
+  {
+    "name": "FxSound",
+    "id": "FxSound.FxSound",
+    "category": "multimedia",
+    "info": {
+      "en": "Audio enhancement software.",
+      "es": "Software de mejora de audio.",
+      "pt": "Software de aprimoramento de áudio."
+    },
+    "link": "https://www.fxsound.com/"
+  },
+  {
+    "name": "Blender",
+    "id": "BlenderFoundation.Blender",
+    "category": "multimedia",
+    "info": {
+      "en": "A 3D creation suite.",
+      "es": "Un suite de creación 3D.",
+      "pt": "Um suite de criação 3D."
+    },
+    "link": "https://www.blender.org/"
+  },
+  {
+    "name": "GeForce NOW",
+    "id": "NVIDIA.GeForceNOW",
+    "category": "games",
+    "info": {
+      "en": "Cloud gaming service.",
+      "es": "Servicio de juegos en la nube.",
+      "pt": "Serviço de jogos na nuvem."
+    },
+    "link": "https://www.nvidia.com/en-us/geforce-now/"
+  },
+  {
+    "name": "Twinkle Tray",
+    "id": "xanderfrangos.twinkletray",
+    "category": "utilities",
+    "info": {
+      "en": "Brightness control tool.",
+      "es": "Herramienta de control de brillo.",
+      "pt": "Ferramenta de controle de brilho."
+    },
+    "link": "https://twinkletray.com/?ref=togsboost"
+  },
+  {
+    "name": "SuperF4",
+    "id": "StefanSundin.Superf4",
+    "category": "utilities",
+    "info": {
+      "en": "Force close applications.",
+      "es": "Forzar cierre de aplicaciones.",
+      "pt": "Forçar fechamento de aplicativos."
+    },
+    "link": "https://stefansundin.github.io/superf4/"
+  },
+  {
+    "name": "Revo Uninstaller",
+    "id": "RevoUninstaller.RevoUninstaller",
+    "category": "utilities",
+    "info": {
+      "en": "Advanced uninstaller.",
+      "es": "Desinstalador avanzado.",
+      "pt": "Desinstalador avançado."
+    },
+    "link": "https://www.revouninstaller.com/products/revo-uninstaller-free/?ref=togsboost"
+  },
+  {
+    "name": "Unity Hub",
+    "id": "Unity.UnityHub",
+    "category": "development",
+    "info": {
+      "en": "Game engine.",
+      "es": "Motor de juegos.",
+      "pt": "Motor de jogos."
+    },
+    "link": "https://unity.com/products/unity-hub"
+  },
+  {
+    "name": "Oh My Posh",
+    "id": "JanDeDobbeleer.OhMyPosh",
+    "category": "development",
+    "info": {
+      "en": "Terminal prompt customization.",
+      "es": "Personalización de prompt de terminal.",
+      "pt": "Personalização de prompt de terminal."
+    },
+    "link": "https://ohmyposh.dev/"
+  },
+  {
+    "name": "Vesktop",
+    "id": "Vencord.Vesktop",
+    "category": "communication",
+    "info": {
+      "en": "An alternative Discord client.",
+      "es": "Un cliente alternativo de Discord.",
+      "pt": "Um cliente alternativo do Discord."
+    },
+    "link": "https://vencord.dev/"
+  },
+  {
+    "name": "Prism Launcher",
+    "id": "PrismLauncher.PrismLauncher",
+    "category": "games",
+    "info": {
+      "en": "A Minecraft launcher.",
+      "es": "Un lanzador de Minecraft.",
+      "pt": "Um launcher de Minecraft."
+    },
+    "link": "https://prismlauncher.org/"
+  },
+  {
+    "name": "Free Download Manager",
+    "id": "SoftDeluxe.FreeDownloadManager",
+    "category": "utilities",
+    "info": {
+      "en": "Download manager.",
+      "es": "Gestor de descargas.",
+      "pt": "Gerenciador de downloads."
+    },
+    "link": "https://www.freedownloadmanager.org/"
+  },
+  {
+    "name": "Oracle VirtualBox",
+    "id": "Oracle.VirtualBox",
+    "category": "utilities",
+    "info": {
+      "en": "Virtualization software.",
+      "es": "Software de virtualización.",
+      "pt": "Software de virtualização."
+    },
+    "link": "https://www.virtualbox.org/"
+  },
+  {
+    "name": "TeamViewer",
+    "id": "TeamViewer.TeamViewer",
+    "category": "utilities",
+    "info": {
+      "en": "Remote desktop software.",
+      "es": "Software de escritorio remoto.",
+      "pt": "Software de acesso remoto."
+    },
+    "link": "https://www.teamviewer.com/en-ca/"
+  },
+  {
+    "name": "Ungoogled Chromium",
+    "id": "eloston.ungoogled-chromium",
+    "category": "browsers",
+    "info": {
+      "en": "A web browser without Google integration.",
+      "es": "Un navegador web sin integración de Google.",
+      "pt": "Um navegador web sem integração do Google."
+    },
+    "link": "https://github.com/ungoogled-software/ungoogled-chromium"
+  },
+  {
+    "name": "LibreWolf",
+    "id": "LibreWolf.LibreWolf",
+    "category": "browsers",
+    "info": {
+      "en": "A privacy-focused web browser.",
+      "es": "Un navegador web enfocado en la privacidad.",
+      "pt": "Um navegador web focado em privacidade."
+    },
+    "link": "https://librewolf.net/"
+  },
+  {
+    "name": "ShareX",
+    "id": "ShareX.ShareX",
+    "category": "multimedia",
+    "info": {
+      "en": "Screenshot and screen recording tool.",
+      "es": "Herramienta de captura de pantalla y grabación.",
+      "pt": "Ferramenta de captura de tela e gravação."
+    },
+    "link": "https://github.com/ShareX/ShareX"
+  },
+  {
+    "name": "Fastfetch",
+    "id": "Fastfetch-cli.Fastfetch",
+    "category": "utilities",
+    "info": {
+      "en": "System information tool.",
+      "es": "Herramienta de información del sistema.",
+      "pt": "Ferramenta de informação do sistema."
+    },
+    "link": "https://github.com/fastfetch-cli/fastfetch"
+  },
+  {
+    "name": "ZeroTier One",
+    "id": "ZeroTier.ZeroTierOne",
+    "category": "utilities",
+    "info": {
+      "en": "Network virtualization.",
+      "es": "Virtualización de red.",
+      "pt": "Virtualização de rede."
+    },
+    "link": "https://www.zerotier.com/"
+  },
+  {
+    "name": "WinMerge",
+    "id": "WinMerge.WinMerge",
+    "category": "utilities",
+    "info": {
+      "en": "File comparison tool.",
+      "es": "Herramienta de comparación de archivos.",
+      "pt": "Ferramenta de comparação de arquivos."
+    },
+    "link": "https://winmerge.org/"
+  },
+  {
+    "name": "AIMP",
+    "id": "AIMP.AIMP",
+    "category": "multimedia",
+    "info": {
+      "en": "Audio player.",
+      "es": "Reproductor de audio.",
+      "pt": "Reprodutor de áudio."
+    },
+    "link": "https://www.aimp.ru/"
+  },
+  {
+    "name": "CopyQ",
+    "id": "hluk.copyq",
+    "category": "utilities",
+    "info": {
+      "en": "Clipboard manager.",
+      "es": "Gestor de portapapeles.",
+      "pt": "Gerenciador de área de transferência."
+    },
+    "link": "https://hluk.github.io/CopyQ/"
+  },
+  {
+    "name": "Krita",
+    "id": "KDE.Krita",
+    "category": "multimedia",
+    "info": {
+      "en": "Digital painting application.",
+      "es": "Aplicación de pintura digital.",
+      "pt": "Aplicativo de pintura digital."
+    },
+    "link": "https://krita.org/en/"
+  },
+  {
+    "name": "Paint.NET",
+    "id": "dotPDN.PaintDotNet",
+    "category": "multimedia",
+    "info": {
+      "en": "Image editor.",
+      "es": "Editor de imágenes.",
+      "pt": "Editor de imagens."
+    },
+    "link": "https://www.getpaint.net/"
+  },
+  {
+    "name": "IrfanView",
+    "id": "IrfanSkiljan.IrfanView",
+    "category": "multimedia",
+    "info": {
+      "en": "Image viewer.",
+      "es": "Visor de imágenes.",
+      "pt": "Visualizador de imagens."
+    },
+    "link": "https://www.irfanview.com/"
+  },
+  {
+    "name": "AB Download Manager",
+    "id": "ABDownloadManager.ABDownloadManager",
+    "category": "utilities",
+    "info": {
+      "en": "Download manager.",
+      "es": "Gestor de descargas.",
+      "pt": "Gerenciador de downloads."
+    },
+    "link": "https://abdownloadmanager.com/"
+  },
+  {
+    "name": "Total Commander",
+    "id": "Ghisler.TotalCommander",
+    "category": "utilities",
+    "info": {
+      "en": "File manager.",
+      "es": "Gestor de archivos.",
+      "pt": "Gerenciador de arquivos."
+    },
+    "link": "https://www.ghisler.com/"
+  },
+  {
+    "name": "Python 3.10",
+    "id": "Python.Python.3.10",
+    "category": "development",
+    "info": {
+      "en": "Python programming language (v3.10)",
+      "es": "Lenguaje de programación Python (v3.10)",
+      "pt": "Linguagem de programação Python (v3.10)"
+    },
+    "link": "https://www.python.org"
+  },
+  {
+    "name": "Python 3.11",
+    "id": "Python.Python.3.11",
+    "category": "development",
+    "info": {
+      "en": "Python programming language (v3.11)",
+      "es": "Lenguaje de programación Python (v3.11)",
+      "pt": "Linguagem de programação Python (v3.11)"
+    },
+    "link": "https://www.python.org"
+  },
+  {
+    "name": "Python 3.12",
+    "id": "Python.Python.3.12",
+    "category": "development",
+    "info": {
+      "en": "Python programming language (v3.12)",
+      "es": "Lenguaje de programación Python (v3.12)",
+      "pt": "Linguagem de programação Python (v3.12)"
+    },
+    "link": "https://www.python.org"
+  },
+  {
+    "name": "Python 3.13",
+    "id": "Python.Python.3.13",
+    "category": "development",
+    "info": {
+      "en": "Python programming language (v3.13)",
+      "es": "Lenguaje de programación Python (v3.13)",
+      "pt": "Linguagem de programação Python (v3.13)"
+    },
+    "link": "https://www.python.org"
+  }
+]

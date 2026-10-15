@@ -1,0 +1,45 @@
+{
+  "product": "CBN Boost",
+  "version": "1.1.0",
+  "platform": "win32-x64",
+  "artifacts": [
+    {
+      "path": "dist/CBN-Boost-win-x64.zip",
+      "bytes": 125822469,
+      "sha256": "3555ae6f2b61d2828fb6c100ebb11a25c35a8f085f765125015a3193ae95650e"
+    },
+    {
+      "path": "dist/CBN-Boost-win-x64/CBN Boost.exe",
+      "bytes": 211313664,
+      "sha256": "b968281d23c134259a3e4ca09d3e9de1c84dc3c1d08c731c7615f213c2b49253"
+    },
+    {
+      "path": "dist/CBN-Boost-win-x64/resources/app.asar",
+      "bytes": 1129390,
+      "sha256": "abc463234e9c9aa09bf5e58f1250e9d683b6c7e6f99499c8a6d862d5718df5fb"
+    }
+  ],
+  "checks": {
+    "backend_tests_passed": 84,
+    "packaging_tests_passed": 7,
+    "renderer_pages_passed": 6,
+    "first_run_scenarios_passed": 2,
+    "renderer_external_requests": 0,
+    "renderer_page_errors": 0,
+    "portable_manifest_hashes_verified": 76,
+    "asar_files_compared_independently": 83,
+    "portable_zip_entries": 77,
+    "zip_crc_verified": true,
+    "code_sections_preserved": true,
+    "electron_fuses_preserved": true,
+    "administrator_manifest_preserved": true,
+    "windows_execution_tested": false
+  },
+  "rea_evidence": {
+    "final_pe_resources": "ev_8444c14ce1ff0b0d739502165879f650dc1070d4028f2f88bc53396e50487617",
+    "renderer_controlled_replay": "ev_df76ffc12bf5fec3fd759959f7a6be801d5d52807c4857b123503e3d356151b6",
+    "original_installer_inventory": "ev_18364e7943b9ea185286d91521b9b14e0512ad031216e3afc55d7e490eafccc4"
+  },
+  "asar_header_sha256": "ea2695932d5be5e504c5a3399e27f09a0b8610334663e2fc551f4af8332df72e",
+  "scope": "Modified recovered compiled React renderer and newly reconstructed local backend; original Bytenode main source and remote backend were not recovered"
+}
