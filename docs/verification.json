@@ -1,27 +1,28 @@
 {
   "product": "CBN Boost",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "platform": "win32-x64",
   "artifacts": [
     {
       "path": "dist/CBN-Boost-win-x64.zip",
-      "bytes": 125822469,
-      "sha256": "3555ae6f2b61d2828fb6c100ebb11a25c35a8f085f765125015a3193ae95650e"
+      "bytes": 125823689,
+      "sha256": "851a12ebf815890cecfc32d70d13655d9294b0cf8816a2eb54ecc7721438e53c"
     },
     {
       "path": "dist/CBN-Boost-win-x64/CBN Boost.exe",
       "bytes": 211313664,
-      "sha256": "b968281d23c134259a3e4ca09d3e9de1c84dc3c1d08c731c7615f213c2b49253"
+      "sha256": "477eeaa934fa82f5a4252bb28ef766d8ee9f6e10c465b226a52fa4b93a13aee4"
     },
     {
       "path": "dist/CBN-Boost-win-x64/resources/app.asar",
-      "bytes": 1129390,
-      "sha256": "abc463234e9c9aa09bf5e58f1250e9d683b6c7e6f99499c8a6d862d5718df5fb"
+      "bytes": 1133235,
+      "sha256": "8fe1738e2c12eb510184ddd7fa85ab7dec784a80b6bee92c0f3ec8f0a8f9ed98"
     }
   ],
   "checks": {
-    "backend_tests_passed": 84,
+    "backend_tests_passed": 85,
     "packaging_tests_passed": 7,
+    "hardware_vram_regression_cases": 1,
     "renderer_pages_passed": 6,
     "first_run_scenarios_passed": 2,
     "renderer_external_requests": 0,
@@ -33,13 +34,14 @@
     "code_sections_preserved": true,
     "electron_fuses_preserved": true,
     "administrator_manifest_preserved": true,
+    "dxgi_executed_on_windows": false,
     "windows_execution_tested": false
   },
   "rea_evidence": {
-    "final_pe_resources": "ev_8444c14ce1ff0b0d739502165879f650dc1070d4028f2f88bc53396e50487617",
+    "final_pe_resources": "ev_92523ca02eef72bf9300569d6c722acf649ee99834648fc82c3e0d7a0d8b9edd",
     "renderer_controlled_replay": "ev_df76ffc12bf5fec3fd759959f7a6be801d5d52807c4857b123503e3d356151b6",
     "original_installer_inventory": "ev_18364e7943b9ea185286d91521b9b14e0512ad031216e3afc55d7e490eafccc4"
   },
-  "asar_header_sha256": "ea2695932d5be5e504c5a3399e27f09a0b8610334663e2fc551f4af8332df72e",
+  "asar_header_sha256": "1762d04dfe6f6ac575c86396cfbac6f61f0b095e66fcd4a0a54f29b178285e22",
   "scope": "Modified recovered compiled React renderer and newly reconstructed local backend; original Bytenode main source and remote backend were not recovered"
 }

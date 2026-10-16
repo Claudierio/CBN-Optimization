@@ -8,12 +8,92 @@ $RAM = @(Get-CimInstance Win32_PhysicalMemory)
 $GPU = @(Get-CimInstance Win32_VideoController)
 $Disk = Get-CimInstance Win32_DiskDrive | Select-Object -First 1
 $Version = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion'
+$DxgiSource = @'
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+namespace CbnBoost {
+  [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+  public struct DxgiAdapterDescription {
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)] public string Description;
+    public uint VendorId, DeviceId, SubSysId, Revision;
+    public UIntPtr DedicatedVideoMemory, DedicatedSystemMemory, SharedSystemMemory;
+    public uint LuidLow; public int LuidHigh;
+  }
+  public sealed class DxgiAdapterInfo {
+    public string Description { get; set; }
+    public ulong DedicatedVideoMemory { get; set; }
+  }
+  public static class DxgiAdapterProbe {
+    [DllImport("dxgi.dll", EntryPoint = "CreateDXGIFactory", ExactSpelling = true)]
+    private static extern int CreateFactory(ref Guid iid, out IntPtr factory);
+    [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+    private delegate int EnumAdaptersDelegate(IntPtr self, uint index, out IntPtr adapter);
+    [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+    private delegate int GetDescDelegate(IntPtr self, out DxgiAdapterDescription description);
+    [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+    private delegate uint ReleaseDelegate(IntPtr self);
+    private static IntPtr Method(IntPtr instance, int slot) {
+      IntPtr table = Marshal.ReadIntPtr(instance);
+      return Marshal.ReadIntPtr(table, slot * IntPtr.Size);
+    }
+    private static uint Release(IntPtr instance) {
+      return Marshal.GetDelegateForFunctionPointer<ReleaseDelegate>(Method(instance, 2))(instance);
+    }
+    public static DxgiAdapterInfo[] Enumerate() {
+      Guid iid = new Guid("7b7166ec-21c7-44ae-b21a-c9ae321ae369");
+      IntPtr factory = IntPtr.Zero;
+      int status = CreateFactory(ref iid, out factory);
+      if (status < 0) Marshal.ThrowExceptionForHR(status);
+      var adapters = new List<DxgiAdapterInfo>();
+      try {
+        var enumerate = Marshal.GetDelegateForFunctionPointer<EnumAdaptersDelegate>(Method(factory, 7));
+        for (uint index = 0; index < 32; index++) {
+          IntPtr adapter = IntPtr.Zero;
+          status = enumerate(factory, index, out adapter);
+          if (status == unchecked((int)0x887A0002)) break;
+          if (status < 0) Marshal.ThrowExceptionForHR(status);
+          try {
+            DxgiAdapterDescription description;
+            var getDescription = Marshal.GetDelegateForFunctionPointer<GetDescDelegate>(Method(adapter, 8));
+            status = getDescription(adapter, out description);
+            if (status < 0) Marshal.ThrowExceptionForHR(status);
+            adapters.Add(new DxgiAdapterInfo { Description = description.Description.TrimEnd('\0'), DedicatedVideoMemory = description.DedicatedVideoMemory.ToUInt64() });
+          } finally { Release(adapter); }
+        }
+      } finally { Release(factory); }
+      return adapters.ToArray();
+    }
+  }
+}
+'@
+$DxgiAdapters = @()
+try {
+ if (-not ('CbnBoost.DxgiAdapterProbe' -as [type])) { Add-Type -TypeDefinition $DxgiSource -ErrorAction Stop }
+ $DxgiAdapters = @([CbnBoost.DxgiAdapterProbe]::Enumerate())
+} catch { $DxgiAdapters = @() }
+$SelectedGPU = $GPU | Select-Object -First 1
+$Vram = [uint64]0
+if ($SelectedGPU) {
+ $GpuName = [string]$SelectedGPU.Name
+ $Adapter = $DxgiAdapters | Where-Object {
+   $_.DedicatedVideoMemory -gt 0 -and ($_.Description -ieq $GpuName -or
+     $_.Description.IndexOf($GpuName, [StringComparison]::OrdinalIgnoreCase) -ge 0 -or
+     $GpuName.IndexOf($_.Description, [StringComparison]::OrdinalIgnoreCase) -ge 0)
+ } | Select-Object -First 1
+ if ($Adapter) { $Vram = [uint64]$Adapter.DedicatedVideoMemory }
+ else {
+   $LegacyVram = [uint64]$SelectedGPU.AdapterRAM
+   # AdapterRAM is uint32; its maximum is a saturation value for larger GPUs.
+   if ($LegacyVram -gt 0 -and $LegacyVram -lt 4294967295) { $Vram = $LegacyVram }
+ }
+}
 $Types = @{20='DDR';21='DDR2';24='DDR3';26='DDR4';34='DDR5'}
 $MemoryType = if ($RAM.Count -and $Types.ContainsKey([int]$RAM[0].SMBIOSMemoryType)) { $Types[[int]$RAM[0].SMBIOSMemoryType] } else { 'Não informado' }
 [pscustomobject]@{
  cpu_model=$CPU.Name; cpu_cores=[int]$CPU.NumberOfCores
  memory_total=[long](($RAM | Measure-Object Capacity -Sum).Sum); memory_type=$MemoryType
- gpu_model=($GPU.Name -join ', '); vram=if($GPU.Count) { [long]$GPU[0].AdapterRAM } else { 0 }
+ gpu_model=($GPU.Name -join ', '); vram=[long]$Vram
  disk_model=$Disk.Model; disk_size=[long]$Disk.Size; os=$OS.Caption
  os_version=([string]$Version.DisplayVersion + ' (build ' + $OS.BuildNumber + ')')
  windowsBuild=[int]$OS.BuildNumber; windowsEdition=[string]$Version.EditionID
@@ -70,4 +150,4 @@ foreach ($ID in @(${ids.join(',')})) { $Code = [CBNRestore]::SRRemoveRestorePoin
   }
   return {info, restorePoints, createRestorePoint, restore, deleteRestorePoints, userName: () => os.userInfo().username};
 }
-module.exports = {createSystemService};
+module.exports = {createSystemService, systemScript};

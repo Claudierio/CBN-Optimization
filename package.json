@@ -1,6 +1,6 @@
 {
   "name": "cbn-boost-project",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Projeto recuperado e reconstruído do CBN Boost para Windows",
   "scripts": {

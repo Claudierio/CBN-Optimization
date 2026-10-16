@@ -1,4 +1,4 @@
-# CBN Boost 1.1
+# CBN Boost 1.1.1
 
 Aplicativo Windows reconstruído a partir de `TogsBoost-Setup.exe`, com nome e
 marca CBN Boost e abertura direta, sem login ou chave de ativação.
@@ -31,7 +31,7 @@ O executável não possui assinatura digital Authenticode.
   de restauração em caso de falha parcial. Restaurar recupera essa cópia.
 - Limpeza de temporários antigos, Prefetch, miniaturas, Lixeira e downloads do
   Windows Update. Arquivos em uso são ignorados; os bytes contados foram removidos.
-- Informações de hardware e Windows.
+- Informações de hardware e Windows; a memória de vídeo dedicada vem do DXGI de 64 bits. A correção do limite de 4 GB do WMI está em [docs/hardware-vram.md](docs/hardware-vram.md).
 - Listagem, criação, restauração e exclusão confirmada de pontos de restauração.
 - Catálogo recuperado de aplicativos com instalação/remoção pelo WinGet.
 - Logs locais, controle da janela, idiomas, tema e reinicialização confirmada.
@@ -49,8 +49,8 @@ A interface carrega arquivos locais e não consulta o servidor original. A
 instalação de aplicativos pelo WinGet precisa de internet e do App Installer do
 Windows; os identificadores recuperados podem deixar de existir nas fontes.
 Inventário de aplicativos usa a exportação JSON do WinGet, limitada aos pacotes
-que ele consegue associar às fontes. A VRAM obtida por CIM pode ser imprecisa em
-algumas placas. Restauração depende da Proteção do Sistema do Windows.
+que ele consegue associar às fontes. A VRAM usa DXGI e pode ficar indisponível se o Windows não conseguir associar o
+adaptador ao nome informado pelo driver. Restauração depende da Proteção do Sistema do Windows.
 
 ## Editar e gerar outro pacote
 

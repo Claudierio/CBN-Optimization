@@ -83,3 +83,18 @@ nativas e referências estão em [FEATURES_1.1.md](FEATURES_1.1.md). Os testes
 atuais e hashes dos novos pacotes constam em `verification.json`; o relatório
 da interface é `renderer-test-report.json`. As observações de análise estática
 da fase 1.0 acima permanecem históricas e não certificam o código adicional.
+
+
+## Correção de VRAM na versão 1.1.1
+
+A captura `dist/captura.png` mostrou uma RTX 5060 de 8 GB exibida como 4 GB.
+A causa era `Win32_VideoController.AdapterRAM`, documentada como `uint32`;
+`system.cjs` agora enumera placas com DXGI e usa `DXGI_ADAPTER_DESC.DedicatedVideoMemory`
+(`SIZE_T`), associando o adaptador pelo nome. Se DXGI não responder, o painel
+continua carregando e só aceita o campo WMI quando ele não está saturado.
+
+Referências oficiais: [AdapterRAM](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-videocontroller),
+[DedicatedVideoMemory](https://learn.microsoft.com/en-us/windows/win32/api/dxgi/ns-dxgi-dxgi_adapter_desc)
+e [EnumAdapters](https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgifactory-enumadapters).
+O teste automatizado verifica o valor JSON de 8 GiB e o uso do caminho DXGI;
+a enumeração COM real ainda requer validação no Windows. Veja [hardware-vram.md](hardware-vram.md).

@@ -13,7 +13,7 @@
         "cpu_model": "string",
         "cpu_cores": "number",
         "gpu_model": "string",
-        "vram": "number bytes",
+        "vram": "number bytes from DXGI DedicatedVideoMemory; zero when unknown",
         "memory_total": "number bytes",
         "memory_type": "string",
         "disk_model": "string",

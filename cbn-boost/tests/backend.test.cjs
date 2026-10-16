@@ -11,7 +11,7 @@ const {PassThrough} = require('node:stream');
 const {pathToFileURL} = require('node:url');
 const {createRunner, psLiteral} = require('../main/platform.cjs');
 const {createCleanupService} = require('../main/cleanup.cjs');
-const {createSystemService} = require('../main/system.cjs');
+const {createSystemService, systemScript} = require('../main/system.cjs');
 const {createAppsService, parseInstalledExport} = require('../main/apps.cjs');
 const {trustedSender, allowedExternal} = require('../main/security.cjs');
 
@@ -37,6 +37,22 @@ test('process output handles split UTF8 and nonzero status never resolves', asyn
   };
   const runner = createRunner({platform: 'win32', spawnProcess});
   await assert.rejects(runner.run('test.exe', []), error => error.exitCode === 5 && error.message === 'não foi aplicado');
+});
+
+test('GPU VRAM uses 64-bit DXGI dedicated memory instead of saturated WMI AdapterRAM', async () => {
+  let executedScript = '';
+  const expectedVram = 8 * 1024 ** 3;
+  const system = createSystemService({runPowerShell:async script=>{
+    executedScript = script;
+    return {stdout:JSON.stringify({gpu_model:'NVIDIA GeForce RTX 5060',vram:expectedVram})};
+  }});
+  const info = await system.info();
+  assert.equal(info.vram, expectedVram);
+  assert.match(executedScript, /DedicatedVideoMemory/);
+  assert.match(executedScript, /CbnBoost\.DxgiAdapterProbe/);
+  assert.match(executedScript, /AdapterRAM[\s\S]*4294967295/);
+  assert.doesNotMatch(executedScript, /vram=if\(\$GPU\.Count\)[\s\S]{0,80}AdapterRAM/);
+  assert.match(systemScript, /UIntPtr DedicatedVideoMemory/);
 });
 
 test('cleanup executes only the exact catalog script and reports verified byte counts', async () => {

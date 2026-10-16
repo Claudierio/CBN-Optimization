@@ -1,8 +1,9 @@
-# CBN Boost 1.1: resultado da recuperação
+# CBN Boost 1.1.1: resultado da recuperação
 
 A reconstrução da interface e do backend local foi empacotada para Windows x64.
 O instalador original continua preservado e o executável novo abre sem conta ou
-chave. A interface e o código recuperados estão em `cbn-boost/`; o processo
+chave. A versão 1.1.1 corrige a leitura da memória de vídeo acima de 4 GB; detalhes
+e referências estão em `docs/hardware-vram.md`. A interface e o código recuperados estão em `cbn-boost/`; o processo
 principal original era bytecode Bytenode e não foi recuperado como fonte.
 
 ## Entrega
@@ -37,11 +38,12 @@ permissões no momento da execução e informam quando dependem de GPU/driver,
 versão ou edição do Windows. Uma configuração registrada não comprova ganho de
 FPS. Remoções de pacotes e limpeza nativa não oferecem reversão automática.
 
-## Verificação da versão 1.1
+## Verificação da versão 1.1.1
 
-- 84 verificações de backend passaram usando executores simulados; incluem
+- 85 verificações de backend passaram usando executores simulados; incluem
   conflitos, restauração e falhas parciais.
 - 7 verificações de empacotamento passaram.
+- Um teste de regressão confirma o caminho DXGI de 64 bits para VRAM de 8 GiB e rejeita a leitura WMI saturada.
 - Replay controlado em Chromium percorreu as seis páginas e dois cenários da
   primeira abertura; 0 requisições externas e 0 erros JavaScript não tratados.
 - Catálogo real mostrou 29 itens, 28 disponíveis, 22 reversíveis, 6 ações e 1
